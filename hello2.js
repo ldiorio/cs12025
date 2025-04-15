@@ -6,7 +6,7 @@ console.log("This goes to the console window");
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   urlObj = url.parse(req.url,true)
-  if (urlObj.pathname == "/") 
+  if (urlObj.pathname == "/")   //home view
   {
      res.write ("Success!  This app is deployed online");
      res.write("<h2>This is my hello application</h2>");
